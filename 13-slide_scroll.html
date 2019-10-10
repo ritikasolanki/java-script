@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>Slide Scroll</title>
+</head>
+<body>
+  <div class="site-wrap">
+    <h1>Slide in on Scroll</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum turpis. Nulla maximus rutrum dolor sit amet laoreet. Nullam semper sodales leo a hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae facilisis magna. </p>
+    <p> Etiam nec volutpat sem. Donec sed faucibus est. Aenean fringilla mi dui, molestie accumsan metus sagittis non. Aenean placerat rhoncus arcu, in laoreet quam imperdiet a. Vivamus efficitur, massa quis interdum sodales, nulla eros ullamcorper ligula, nec pretium risus orci quis magna. </p>
+    <p> Vestibulum vestibulum ipsum eu nisi cursus, in sodales tellus vulputate. Sed bibendum ante enim, at vehicula dui molestie non... </p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum varius massa, sit amet scelerisque urna bibendum at. Cras porttitor imperdiet aliquam. Donec non bibendum augue. Nunc leo justo, sollicitudin vitae mollis vitae, aliquet id nulla. In finibus risus vel nunc semper, at viverra erat faucibus. </p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum varius massa, sit amet scelerisque urna bibendum at. Cras porttitor imperdiet aliquam. Donec non bibendum augue. </p>
+
+    <img src="images/1.jpg" class="align-left slide-in">
+    <p> Nulla quis porttitor quam, sed luctus eros. Duis finibus libero ut efficitur dignissim. Duis vel molestie magna. In porta, eros eu imperdiet porttitor, nec interdum urna sapien eu nunc. </p>
+
+    <img src="images/2.jpg" class="align-right slide-in">
+    <p> Nulla quis porttitor quam, sed luctus eros. Duis finibus libero ut efficitur dignissim. Duis vel molestie magna. In porta, eros eu imperdiet porttitor, nec interdum urna sapien eu nunc. </p>
+
+    <img src="images/3.jpg" class="align-left slide-in">
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum varius massa, sit amet scelerisque urna bibendum at. Cras porttitor imperdiet aliquam.  </p>
+    <p> In enim dui, sodales ac euismod sit amet, facilisis eget mi. Vestibulum interdum ante ut velit sagittis, sit amet malesuada justo molestie. Nullam ante erat, rutrum vel mattis quis, aliquet id felis. </p>
+
+    <img src="images/4.jpg" class="align-right slide-in">
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum varius massa, sit amet scelerisque urna bibendum at. Cras porttitor imperdiet aliquam. Donec non bibendum augue. </p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum varius massa, sit amet scelerisque urna bibendum at. Cras porttitor imperdiet aliquam. Donec non bibendum augue. </p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum varius massa, sit amet scelerisque urna bibendum at. Cras porttitor imperdiet aliquam. Donec non bibendum augue. </p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum varius massa, sit amet scelerisque urna bibendum at. Cras porttitor imperdiet aliquam. Donec non bibendum augue. </p>
+    </div>
+
+    <style>
+
+      html {
+      box-sizing: border-box;
+      background: orange;
+      font-family: 'helvetica neue';
+      font-size: 20px;
+      font-weight: 200;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    h1 {
+      margin-top: 0;
+      text-align: center;
+    }
+    .site-wrap {
+      max-width: 700px;
+      margin: 100px auto;
+      background: white;
+      padding: 40px;
+      text-align: justify;
+    }
+    .align-left {
+      float: left;
+      margin-right: 20px;
+      width:500px;
+      height:500px;
+      margin-top: 10px;
+    }
+    .align-right {
+      float: right;
+      margin-left: 20px;
+      width:500px;
+      height:500px;
+      margin-top: 10px;
+    }
+    .slide-in {
+      opacity: 0;
+      transition: all .5s;
+    }
+    .align-left.slide-in {
+      transform: translateX(-30%) scale(0.95);
+    }
+
+    .align-right.slide-in {
+      transform: translateX(30%) scale(0.95);
+    }
+    .slide-in.active {
+      opacity: 1;
+      transform: translateX(0%) scale(1);
+    }
+  </style>
+<script type="text/javascript" src="slide_scroll.js"></script>
+
+</body>
+</html>
